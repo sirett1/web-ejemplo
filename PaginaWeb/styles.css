@@ -1,0 +1,259 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1a5276;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Navegación */
+nav {
+    background-color: #21618c;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #aed6f1;
+}
+
+/* Main */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 3rem;
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #1a5276;
+    border-bottom: 2px solid #aed6f1;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+/* Menú */
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.menu-item {
+    background-color: #f2f4f4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item h3 {
+    color: #21618c;
+    margin-bottom: 0.5rem;
+}
+
+.menu-item p {
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-weight: bold;
+    color: #1d8348;
+    font-size: 1.2rem;
+}
+
+/* Listas en el menú */
+#menu ul {
+    margin-top: 1rem;
+    padding-left: 2rem;
+}
+
+#menu li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+/* Galería */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* Sobre Nosotros */
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Lista ordenada en Sobre Nosotros */
+#nosotros ol {
+    margin: 1rem 0;
+    padding-left: 2rem;
+}
+
+#nosotros li {
+    margin-bottom: 0.8rem;
+    padding-left: 0.5rem;
+}
+
+/* Enlace externo */
+.external-link {
+    display: inline-block;
+    background-color: #21618c;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.external-link:hover {
+    background-color: #1a5276;
+}
+
+.external-link i {
+    margin-right: 0.5rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1a5276;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+}
+
+.contact-info div {
+    min-width: 200px;
+}
+
+.contact-info h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    color: #aed6f1;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .gallery img {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    header h1 {
+        font-size: 2rem;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    section {
+        padding: 1.5rem;
+    }
+}
